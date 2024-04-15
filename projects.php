@@ -17,6 +17,11 @@
 <body>
     <?php include_once './php/header-nav.php'; ?>
 
+    <?php
+        $jsonData = file_get_contents('./projects.json');
+        $projects = json_decode($jsonData, true);
+    ?>
+
     <section class="py-5">
         <div class="container py-5">
             <div class="row mb-5">
@@ -26,15 +31,20 @@
                 </div>
             </div>
             <div id="projectList" class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div id="project1" class="col mb-4">
-                    <div><a href="#"><img class="rounded img-fluid shadow w-100 fit-cover" src="assets/img/products/1.jpg?h=fc1e51d44f18accfa3a90f81c9cfffe4" style="height: 250px;"></a>
-                        <div class="py-4"><span class="badge bg-primary mb-2">Website</span>
-                            <h4 class="fw-bold">Lorem libero donec</h4>
-                            <p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                <?php foreach ($projects as $project): ?>
+                    <div class="col mb-4">
+                        <div>
+                            <a href="<?php echo $project['link']; ?>"><img class="rounded img-fluid shadow w-100 fit-cover" src="<?php echo $project['imgSrc']; ?>" style="height: 250px;"></a>
+                            <div class="py-4">
+                                <span class="badge bg-primary mb-2"><?php echo $project['category']; ?></span>
+                                <h4 class="fw-bold"><?php echo $project['title']; ?></h4>
+                                <p class="text-muted"><?php echo $project['description']; ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php endforeach; ?>
             </div>
+
         </div>
     </section>
 

@@ -1,0 +1,66 @@
+[
+    {
+      "imgSrc": "./assets/img/projects/kachoufuugetsu.jpg",
+      "category": "Hợp tác",
+      "title": "Kachoufuugetsu HANU",
+      "description": "Kachoufuugetsu HANU",
+      "link": "https://www.facebook.com/100063582549627/videos/1459914988185464"
+    },
+    {
+      "imgSrc": "./assets/img/projects/so-profile.png",
+      "category": "Nhà Sổ",
+      "title": "Profile shooting 2023",
+      "description": "Profile shooting 2023",
+      "link": "https://www.facebook.com/somedia.vn.2016/videos/198116229592288/"
+    },
+    {
+      "imgSrc": "./assets/img/projects/chaotand23.jpg",
+      "category": "Chào tân",
+      "title": "Break the shell 2023",
+      "description": "Break the shell 2023",
+      "link": "https://www.facebook.com/photo?fbid=652563173648149&set=pcb.652571926980607"
+    },
+    {
+      "imgSrc": "./assets/img/projects/chaotand22.png",
+      "category": "Chào tân",
+      "title": "The P-Chain 2022",
+      "description": "The P-Chain 2022",
+      "link": "https://www.facebook.com/somedia.vn.2016/videos/941481530159388"
+    },
+    {
+      "imgSrc": "./assets/img/projects/tedxhanu.jpg",
+      "category": "Hợp tác",
+      "title": "TED x HANU 2023",
+      "description": "TED x HANU 2023",
+      "link": "https://www.facebook.com/tedxhanu/videos/1365086274436809"
+    },
+    {
+      "imgSrc": "./assets/img/projects/dongphucptit.png",
+      "category": "PTIT",
+      "title": "Đồng phục PTIT 2023",
+      "description": "Đồng phục PTIT 2023",
+      "link": "https://www.facebook.com/somedia.vn.2016/videos/305607272023242"
+    },
+    {
+      "imgSrc": "./assets/img/projects/agriupneu.jpg",
+      "category": "Hợp tác",
+      "title": "AGRIUP 2023 NEU",
+      "description": "AGRIUP 2023 NEU",
+      "link": "https://www.facebook.com/agriup.NEU/videos/2103583136647621"
+    },
+    {
+      "imgSrc": "./assets/img/projects/ngaydautien.png",
+      "category": "Music video",
+      "title": "Ngày đầu tiên PTIT",
+      "description": "Ngày đầu tiên PTIT",
+      "link": "https://www.youtube.com/watch?v=y7Y7VtKb9rY"
+    },
+    {
+      "imgSrc": "./assets/img/projects/so-tvc.jpg",
+      "category": "TVC",
+      "title": "Sổ Media TVC 2023",
+      "description": "Sổ Media TVC 2023",
+      "link": "https://www.youtube.com/watch?v=ZrfJXRTsrEo"
+    }
+  ]
+  
