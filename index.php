@@ -37,19 +37,19 @@
         </div>
     </header>
     <!-- about section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-md-5">
         <div class="row pt-5 mx-0">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
                 <h3 class="fw-bold text-success mb-2">Giới thiệu</h3>
                 <h2 class="">CLB đa phương tiện tại PTIT</h2>
             </div>
         </div>
-        <div class="container text-center py-5">
-            <div class="row p-5">
-                <div class="col-md-4 p-5" data-aos="fade-right">
+        <div class="container text-center py-lg-5">
+            <div class="row p-lg-5">
+                <div class="col-md-4 p-5 d-lg-block d-none" data-aos="fade-right">
                     <img src="./assets/img/logo-transparent.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-8 text-start fs-5 p-5" data-aos="fade-left">
+                <div class="col-lg-8 text-start fs-5 p-lg-5 py-5" data-aos="fade-left">
                     <p class="fst-italic">
                         Được thành lập từ năm 2016 với 3 thành viên sáng lập, Sổ Media là nơi quy tụ những sinh viên đam mê
                         nhiếp ảnh, quay phim, thiết kế. Đến với Sổ Media bạn sẽ được tham gia một câu lạc bộ năng động, luôn
@@ -70,7 +70,7 @@
 
     <!-- department section -->
     <section id="department">
-        <div class="container bg-dark py-5">
+        <div class="container bg-dark py-md-5">
             <div class="row pt-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
                     <h3 class="fw-bold text-success mb-2">Các ban</h3>
@@ -79,7 +79,7 @@
             </div>
             <div class="py-5 p-lg-5">
                 <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                    <div class="col mb-5">
+                    <div class="col mb-md-5 mb-4">
                         <div class="card shadow-sm">
                             <div class="card-body px-4 py-5 px-md-5">
                                 <h5 class="fw-bold card-title mb-3 text-success">Ban Media&nbsp;</h5>
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col mb-md-5 mb-4">
                         <div class="card shadow-sm">
                             <div class="card-body px-4 py-5 px-md-5">
                                 <h5 class="fw-bold card-title mb-3 text-success">Ban truyền thông&nbsp;</h5>
@@ -119,7 +119,7 @@
 
     <!-- training section -->
     <section id="training">
-        <div class="container py-5">
+        <div class="container py-md-5">
             <div class="row py-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
                     <h3 class="fw-bold text-success mb-2">Đào tạo</h3>
@@ -160,7 +160,7 @@
     <!-- end training section -->
 
     <!-- Testimonials section -->
-    <section id="testimonials" class="py-5">
+    <section id="testimonials" class="py-md-5 py-4">
         <div class="container mt-5">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -206,9 +206,9 @@
     <!-- end testimonials section -->
 
     <!-- contact section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-md-5">
         <div class="container pt-5">
-            <div class="row mb-5">
+            <div class="row mb-md-5 mb-3">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
                     <h3 class="fw-bold text-success mb-2">Liên hệ</h3>
                     <h2 class="">Hãy liên hệ với <span class="text-success">Sổ Media</span> ngay</h2>
