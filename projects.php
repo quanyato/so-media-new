@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php include './php/header.php'; ?>
+    <?php include_once './php/header-nav.php'; ?>
 
     <section class="py-5">
         <div class="container py-5">
@@ -38,7 +38,7 @@
         </div>
     </section>
 
-    <?php include './php/footer.php'; ?>
+    <?php include_once './php/footer.php'; ?>
 </body>
 
 </html>

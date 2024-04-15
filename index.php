@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php include './php/header.php'; ?>
+    <?php include_once './php/header-nav.php'; ?>
 
     <header id="hero" class="bg-dark">
         <div class="container pt-4 pt-xl-5">

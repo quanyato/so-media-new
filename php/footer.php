@@ -4,17 +4,17 @@
             <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
                 <h3 class="fs-6 fw-bold">Trang chủ</h3>
                 <ul class="list-unstyled">
-                    <li><a href="index.html#about">Giới thiệu</a></li>
-                    <li><a href="index.html#department">Các ban</a></li>
-                    <li><a href="index.html#training">Đào tạo</a></li>
+                    <li><a href="./index.php#about">Giới thiệu</a></li>
+                    <li><a href="./index.php#department">Các ban</a></li>
+                    <li><a href="./index.php#training">Đào tạo</a></li>
                 </ul>
             </div>
             <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
-                <h3 class="fs-6 fw-bold">...</h3>
+                <h3 class="fs-6 fw-bold">Trang chủ</h3>
                 <ul class="list-unstyled">
-                    <li><a href="index.html#testimonials">Nhận xét</a></li>
-                    <li><a href="index.html#contact">Liên hệ</a></li>
-                    <li><a href="projects.html">Dự án</a></li>
+                    <li><a href="./index.php#testimonials">Nhận xét</a></li>
+                    <li><a href="./index.php#contact">Liên hệ</a></li>
+                    <li><a href="./projects.php">Dự án</a></li>
                 </ul>
             </div>
             <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column">
