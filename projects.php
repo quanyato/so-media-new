@@ -26,8 +26,8 @@
         <div class="container py-5">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2 class="fw-bold">Các dự án</h2>
-                    <p class="text-muted">Một số dự án nổi bật của Gia đình nhà Sổ</p>
+                    <h2 class="fw-bold text-success">Các dự án</h2>
+                    <h3 class="text-muted">Một số dự án nổi bật của <span class="text-success">Gia đình nhà Sổ</span></p>
                 </div>
             </div>
             <div id="projectList" class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
