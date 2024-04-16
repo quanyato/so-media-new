@@ -47,16 +47,16 @@
         <div class="container text-center py-lg-5">
             <div class="row p-lg-5">
                 <div class="col-md-4 p-5 d-lg-block d-none" data-aos="fade-right">
-                    <img src="./assets/img/logo-transparent.png" class="img-fluid" alt="">
+                    <img src="./assets/img/logo-transparent.png" class="img-fluid px-xl-5" alt="">
                 </div>
-                <div class="col-lg-8 text-start fs-5 p-lg-5 py-5" data-aos="fade-left">
+                <div class="col-lg-8 text-start p-lg-5 py-5" data-aos="fade-left">
                     <p class="fst-italic">
                         Được thành lập từ năm 2016 với 3 thành viên sáng lập, Sổ Media là nơi quy tụ những sinh viên đam mê
                         nhiếp ảnh, quay phim, thiết kế. Đến với Sổ Media bạn sẽ được tham gia một câu lạc bộ năng động, luôn
                         tràn đầy năng lượng tích cực và nhiệt huyết. Hiện nay Sổ Media là một trong những đơn vị chụp ảnh, quay
                         phim hàng đầu tại PTIT, tham gia hầu hết các hoạt động lớn nhỏ không chỉ trong mà còn ngoài viện.
                     </p>
-                    <p>
+                    <p class="text-muted">
                         Mục tiêu của Sổ Media là trở thành nơi kết nối và phát triển niềm đam mê của sinh viên trong lĩnh vực
                         nhiếp ảnh, quay phim và thiết kế. Tại Sổ Media, ưu tiên hàng đầu là sự phát triển của các thành viên.
                         Chúng tôi luôn nỗ lực tạo ra một môi trường làm việc chuyên nghiệp và sáng tạo, nơi các thành viên có
