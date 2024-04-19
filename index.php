@@ -205,6 +205,73 @@
     </section>
     <!-- end testimonials section -->
 
+    <?php
+    // define variables and set to empty values
+    $nameErr = $emailErr = $messageErr = $emailSubcriErr = "";
+    $name = $email = $emailSubcri = $message = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["name"])) {
+            $nameErr = "Tên không được bỏ trống";
+        } else {
+            $name = test_input($_POST["name"]);
+            if (!preg_match("/^[a-zA-Z-' \p{L}]*$/u", $name)) {
+                $nameErr = "Không được phép nhập ký tự đặc biệt";
+            }
+        }
+
+        if (empty($_POST["email"])) {
+            $emailErr = "Email không được bỏ trống";
+        } else {
+            $email = test_input($_POST["email"]);
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Email không đúng định dạng";
+            }
+        }
+
+        if (empty($_POST["message"])) {
+            $messageErr = "Thông điệp không được bỏ trống";
+        } else {
+            $message = test_input($_POST["message"]);
+        }
+
+        if (empty($nameErr) && empty($emailErr) && empty($messageErr)) {
+            echo '<script type="text/javascript">
+                    alert("Thông điệp của bạn đã được gửi thành công!");
+                    setTimeout(function(){
+                        window.location.href = "./index.php";
+                    }, 500);
+                  </script>';
+        }
+    }
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        if (empty($_GET["emailSubcri"])) {
+            $emailSubcriErr = "Email không được bỏ trống";
+        } else {
+            $emailSubcri = test_input($_GET["emailSubcri"]);
+            if (!filter_var($emailSubcri, FILTER_VALIDATE_EMAIL)) {
+                $emailSubcriErr = "Email không đúng định dạng";
+            }
+        }
+
+        if (empty($emailSubcriErr)) {
+            echo '<script type="text/javascript">
+                    alert("Đăng ký nhận bản tin thành công!");
+                    setTimeout(function(){
+                        window.location.href = "./index.php";
+                    }, 500);
+                  </script>';
+        }
+    }
+
+    function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?>
     <!-- contact section -->
     <section id="contact" class="py-md-5">
         <div class="container pt-5">
@@ -217,10 +284,13 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6 col-xl-4">
                     <div>
-                        <form class="p-3 p-xl-4" method="post">
-                            <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Tên của bạn"></div>
-                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email của bạn"></div>
-                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Thông điệp"></textarea></div>
+                        <form class="p-3 p-xl-4" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contact">
+                            <div class="text-danger"><?php echo $nameErr; ?></div>
+                            <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Tên của bạn" value="<?php echo $name; ?>"></div>
+                            <div class="text-danger"><?php echo $emailErr; ?></div>
+                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email của bạn" value="<?php echo $email; ?>"></div>
+                            <div class="text-danger"><?php echo $messageErr; ?></div>
+                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Thông điệp" value="<?php echo $message; ?>"></textarea></div>
                             <div><button class="btn btn-primary shadow d-block w-100" type="submit">Gửi</button></div>
                         </form>
                     </div>
@@ -269,8 +339,8 @@
                     <h2 class="fw-bold mb-2">Đăng ký nhận bản tin từ <span class="text-success">Nhà Sổ</span></h2>
                     <p class="mb-0">Luôn cập nhật những hoạt động hấp dẫn</p>
                 </div>
-                <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="post">
-                    <div class="my-2"><input class="border rounded-pill shadow-sm form-control" type="email" name="email" placeholder="Email của bạn"></div>
+                <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contact">
+                    <div class="my-2"><input class="border rounded-pill shadow-sm form-control" type="email" name="emailSubcri" placeholder="Email của bạn"></div>
                     <div class="my-2"><button class="btn btn-primary shadow ms-2" type="submit">Đăng ký</button></div>
                 </form>
             </div>
